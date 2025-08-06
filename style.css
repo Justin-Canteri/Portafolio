@@ -1,0 +1,149 @@
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Cada sección ocupa toda la pantalla */
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 60px; /* para que no tape el menú */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+}
+.parrafo{
+  min-height: 50vh;
+  background-color: white;;
+}
+
+/* Menú */
+header {
+  height: 60px;
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  list-style: none;
+  background-color: #333;
+}
+
+li {
+  border-left: 1px solid #bbb;
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+/* INICIO */
+#inicio {
+  background-image: url("img/images laptop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-size: 2rem;
+}
+
+/* DESCRIPCIÓN */
+#descripcion {
+  background-color: white;
+  flex-direction: row;
+  gap: 20px;
+  padding: 60px 5%;
+  align-items: flex-start;
+}
+
+#ImagenDes {
+  width: 30%;
+  height: auto;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+
+#descripcionn {
+  max-width: 60%;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* PROYECTOS */
+h2{
+  position: absolute;
+  margin-bottom: 30%;
+  font-size: 250%;
+}
+
+#proyectos {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.proyecto {
+  border: 3px solid #000;
+  border-radius: 10px;
+  height: 300px;
+  transition: transform 0.4s, opacity 0.3s;
+}
+
+.proyecto:hover {
+  transform: scale(1.07);
+  opacity: 0.9;
+}
+
+/* CONTACTOS */
+#contactos {
+  display: flex; 
+  justify-content: center; 
+  gap: 20px; 
+  margin-top: 50px;
+}
+
+.imagenCont{
+  width: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height:auto;
+}
+
+.linksCont{
+  display: inline-block; /* <--- esto evita que ocupen todo el ancho */
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
